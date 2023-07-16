@@ -1,3 +1,31 @@
+<h1>Audio Recorder 2023</h1>
+
+<p>Built by <strong>Harald Rudell</strong> harald.rudell@gmail.com on July 15, 2023, in San Francisco, CA</p>
+
+<h2>0.9.33-230715</h2>
+<p>0.9.33-230715 is the versionName visible in app Settings</p>
+<p>934 is the internal Android versionCode</p>
+
+<h2>Android 12–13–14+ Compatible</h2>
+<ul>
+<li>Telephony compatible with Android 12+</li>
+<li>POST_NOTIFICATIONS permission for Android 13+</li>
+<li>No static storage of Context — avoids memory leak</li>
+<li>Supports software module Timber 5.0.1+</li>
+<li>Sound Software-Engineering principles</li>
+</ul>
+<p />
+<ul>
+<li>Improving on Audio Recorder 0.9.33 March 19, 2023, hash a11bb9b:<ul>
+<li>0.9.33 was created on January 29, 2022</li>
+<li>Other committers pushed 6 commits over two years without increasing version number</li>
+<li>0.9.33 releases from Google Play as of July 15, 2023, have two-year-old rollbacks with old crashes returning</li>
+<li>0.9.26 from F-Droid as of July 15, 2023, is from 2021 with old crashes</li>
+<li>Those crashes means any recording in progress is lost</li></ul>
+</ul>
+
+<p>—</p>
+
 ![Audio Recorder Logo](https://github.com/Dimowner/AudioRecorder/blob/master/app/src/releaseConfig/res/mipmap-xxxhdpi/audio_recorder_logo.png)
 
 # Audio Recorder
