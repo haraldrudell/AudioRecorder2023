@@ -39,6 +39,7 @@ import android.widget.Toast;
 
 import com.dimowner.audiorecorder.ARApplication;
 import com.dimowner.audiorecorder.AppConstants;
+import com.dimowner.audiorecorder.BuildConfig;
 import com.dimowner.audiorecorder.ColorMap;
 import com.dimowner.audiorecorder.R;
 import com.dimowner.audiorecorder.app.browser.FileBrowserActivity;
@@ -394,7 +395,11 @@ public class SettingsActivity extends Activity implements SettingsContract.View,
 	public SpannableStringBuilder getAboutContent() {
 		// Build the about body view and append the link to see OSS licenses
 		SpannableStringBuilder aboutBody = new SpannableStringBuilder();
-		aboutBody.append(Html.fromHtml(getString(R.string.about_body, AndroidUtils.getAppVersion(getApplicationContext()))));
+		aboutBody.append(Html.fromHtml(
+				getString(R.string.about_body,AndroidUtils.getAppVersion(getApplicationContext() ))+
+						"<br/><br/>"+BuildConfig.Attribution+
+						"<br/><br/>"+BuildConfig.URL
+								));
 		return aboutBody;
 	}
 
