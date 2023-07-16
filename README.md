@@ -1,9 +1,13 @@
 <h1>Audio Recorder 2023</h1>
 
-<p>Built by <strong>Harald Rudell</strong> harald.rudell@gmail.com on July 15, 2023, in San Francisco, CA</p>
+<p><img src=https://avatars.githubusercontent.com/u/926815?s=48 /></p>
+<p>Built by <strong>Harald Rudell</strong> 
+harald.rudell@gmail.com<br />
+on July 15, 2023, in San Francisco, CA</p>
 
 <h2>0.9.33-230715</h2>
-<p>0.9.33-230715 is the versionName visible in app Settings</p>
+<p>0.9.33-230715 is the versionName visible in app Settings<br />
+(Audio Recorder — ⚙️— scroll to bottom)</p>
 <p>934 is the internal Android versionCode</p>
 
 <h2>Android 12–13–14+ Compatible</h2>
