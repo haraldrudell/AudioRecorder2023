@@ -34,7 +34,7 @@ import androidx.core.content.ContextCompat
 import com.dimowner.audiorecorder.util.AndroidUtils
 import timber.log.Timber
 import timber.log.Timber.DebugTree
-
+import com.dimowner.audiorecorder.BuildConfig
 
 //import com.google.firebase.FirebaseApp;
 class ARApplication : Application() {

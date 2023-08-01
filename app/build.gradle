@@ -9,11 +9,11 @@ android {
 	namespace 'com.dimowner.audiorecorder'
 	compileSdkVersion 33
 	defaultConfig {
-		applicationId "com.dimowner.audiorecorder"
+		applicationId "io.github.haraldrudell.audiorecorder"
 		minSdkVersion 21
 		targetSdkVersion 33
-		versionCode 934
-		versionName "0.9.33-230715"
+		versionCode 230801
+		versionName "0.9.33-230801"
 		buildConfigField "String", "Attribution", "\"Harald Rudell\""
 		buildConfigField "String", "URL", "\"github.com/haraldrudell/AudioRecorder2023\""
 	}
@@ -60,13 +60,13 @@ android {
 	productFlavors {
 		debugConfig {
 			dimension "default"
-			applicationId "com.dimowner.audiorecorder.debug"
+			applicationId "io.github.haraldrudell.audiorecorder.debug"
 			signingConfig = signingConfigs.dev
 		}
 		releaseConfig {
 			dimension "default"
 			signingConfig = signingConfigs.dev
-			applicationId "com.dimowner.audiorecorder"
+			applicationId "io.github.haraldrudell.audiorecorder"
 		}
 	}
 
