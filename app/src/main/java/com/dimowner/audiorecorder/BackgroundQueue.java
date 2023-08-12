@@ -63,7 +63,7 @@ public class BackgroundQueue extends Thread {
 	@Override
 	public void run() {
 		Looper.prepare();
-		handler = new Handler() {
+		handler = new Handler(Looper.myLooper()) {
 			@Override
 			public void handleMessage(Message msg) {
 				BackgroundQueue.this.handleMessage(msg);
