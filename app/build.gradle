@@ -12,8 +12,8 @@ android {
 		applicationId "io.github.haraldrudell.audiorecorder"
 		minSdkVersion 21
 		targetSdkVersion 33
-		versionCode 20230802
-		versionName "0.9.33-230802"
+		versionCode 20230811
+		versionName "0.9.33-230811"
 		buildConfigField "String", "Attribution", "\"Harald Rudell\""
 		buildConfigField "String", "URL", "\"github.com/haraldrudell/AudioRecorder2023\""
 	}
