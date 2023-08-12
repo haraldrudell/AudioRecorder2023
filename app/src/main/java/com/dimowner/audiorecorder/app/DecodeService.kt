@@ -1,4 +1,5 @@
 /*
+ * © Copyright 2023 Harald Rudell <harald.rudell@gmail.com>
  * Copyright 2021 Dmytro Ponomarenko
  *
  * Licensed under the Apache License, Version 2.0 (the "License");

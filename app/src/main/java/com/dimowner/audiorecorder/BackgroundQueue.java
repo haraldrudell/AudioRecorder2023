@@ -1,3 +1,6 @@
+/*
+ * © Copyright 2023 Harald Rudell <harald.rudell@gmail.com>
+ */
 package com.dimowner.audiorecorder;
 
 import android.os.Handler;

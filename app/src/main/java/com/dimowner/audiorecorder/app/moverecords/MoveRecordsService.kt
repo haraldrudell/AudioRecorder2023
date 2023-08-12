@@ -1,3 +1,7 @@
+/*
+ * © Copyright 2023 Harald Rudell <harald.rudell@gmail.com>
+ */
+
 package com.dimowner.audiorecorder.app.moverecords
 
 import android.annotation.SuppressLint
