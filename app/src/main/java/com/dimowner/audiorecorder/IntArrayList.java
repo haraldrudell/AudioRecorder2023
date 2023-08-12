@@ -16,25 +16,37 @@
 
 package com.dimowner.audiorecorder;
 
+import android.util.Log;
+
 public class IntArrayList {
 
 	private int[] data = new int[100];
 	private int size = 0;
+	private final String LOG_TAG = getClass().getSimpleName();
 
-	public void add(int val) {
+
+	public synchronized void add(int val) {
+		if (data.length == 0 ) {
+			Log.e(LOG_TAG, "data.length 0 size " + String.valueOf(size));
+			data = new int[100];
+		}
 		if (data.length == size) {
 			grow();
-			add(val);
+			//add(val);
+		}
+		if (data.length <= size) {
+			Log.e(LOG_TAG, "data.length "+ String.valueOf(data.length)+" size " + String.valueOf(size));
+			grow2(size+1);
 		}
 		data[size] = val;
 		size++;
 	}
 
-	public int get(int index) {
+	public synchronized int get(int index) {
 		return data[index];
 	}
 
-	public int[] getData() {
+	public synchronized int[] getData() {
 		int [] arr = new int[size];
 		for (int i = 0; i < size; i++) {
 			arr[i] = data[i];
@@ -42,18 +54,26 @@ public class IntArrayList {
 		return arr;
 	}
 
-	public void clear() {
+	public synchronized void clear() {
 		data = new int[100];
 		size = 0;
 	}
 
-	public int size() {
+	public synchronized int size() {
 		return size;
 	}
 
 	private void grow() {
 		int[] backup = data;
 		data = new int[data.length * 2];
+		for (int i = 0; i < backup.length; i++) {
+			data[i] = backup[i];
+		}
+	}
+
+	private void grow2(int n) {
+		int[] backup = data;
+		data = new int[n];
 		for (int i = 0; i < backup.length; i++) {
 			data[i] = backup[i];
 		}
